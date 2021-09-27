@@ -31,6 +31,6 @@ app.use(notFoundError);
 //error middleware
 app.use(errorHandler);
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, console.log(`Server running on Port ${PORT}`.green.bold));
